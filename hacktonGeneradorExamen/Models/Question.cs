@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace hacktonGeneradorExamen.Models
@@ -11,7 +12,8 @@ namespace hacktonGeneradorExamen.Models
         public Int16 Year { get; set; }
         public int Points { get; set; }
         public String SQuestion { get; set; }
-        public ICollection<String> Answers { get; set; }
+        public bool IsTrue;
+        public ICollection<Answer> Answers { get; set; }
         public Theme Theme { get; set; }
     }
 }
